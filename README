@@ -1,0 +1,35 @@
+├── ascon_sup/
+│   └── dataGen.h
+│       └── [Description]: Prepare the data for the experiments
+│
+├── header/
+│   └── [Description]: Directly from ASCON implementation Path: ascon.zip\ascon\Implementations\crypto_aead\ascon128v12\ref
+│   ├── api.h
+│   ├── ascon.h
+│   ├── crypto_aead.h
+│   ├── permutations.h
+│   ├── printstate.h
+│   ├── round.h
+│   └── word.h
+│
+├── ascon_basic.cu
+│   └── [Description]: Basic GPU and CPU version, compare the decryptedtext with plaintext
+├── ascon_basicV2.cu
+│   └── [Description]: Basic GPU and CPU version, compare decryptedtext/plaintext from CPU with GPU
+├── ascon_latency_basic.cu
+│   └── [Description]: Used to compare with ascon_latency.cu
+├── ascon_latency.cu
+│   └── [Description]: Use 5 threads to do one task (Rewriting ROUND, AEAD encryption, AEAD decryption)
+├── ascon_test_encrypt.cu
+│   └── [Description]: Ensuring the quality of rewritten code (AEAD encryption) <generated with the help of GPT>
+├── ascon_test_Round.cu
+│   └── [Description]: Ensuring the quality of rewritten code (ROUND vs ROUND_FIVE) <generated with the help of GPT>
+├── ascon_throughput.cu
+│   └── [Description]: Use stream to improve the throughput
+├── ascon_throughputV2.cu
+│   └── [Description]: Use shared Memory instead of using Global Memory
+├── ascon_throughputV3.cu
+│   └── [Description]: Slightly change the reading pattern for coalesced memory access
+└── ascon_try.cu
+    └── [Description]: Try the AEAD algorithm <generated with the help of GPT>
+
